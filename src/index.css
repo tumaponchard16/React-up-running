@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.jumbotron{
+  background: #544AA1;
+  border-radius: 0 !important;
+  margin-top: -20px;
+}
+
+.input-header{
+  color: #fff !important;
+  font-size: 45px;
+}
+
+.btn{
+  margin-left: 5px;
+}
+
+.loadmore-btn{
+  display: block;
+  clear: both !important;
+  margin: 0 auto;
+}
+
+.sortBtn{
+  margin-right: 15px;
+}
+
+.active{
+  background-color: #544AA1;
+  padding: 18px 10px;
+  color: #fff;
+  text-decoration: none;
+}

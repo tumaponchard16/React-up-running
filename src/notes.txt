@@ -1,0 +1,53 @@
+
+// ------------------------index.js file-------------------------------
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+// A variable declared with const can not be changed
+// A variable declared with let can be changed
+
+// But if a variable is an array or object its value can be altered 
+const para = {
+    text: "When you have a talking mouth, you don't have listening ears!"
+};
+
+class Hello extends React.Component {
+    render() {
+
+        para.iAmNewPara = "I can change you!";
+
+        return( 
+            <div>
+                <h2> {para.text} </h2>
+                <p>{ para.iAmNewPara }</p>
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(<Hello />, document.getElementById('root'));
+registerServiceWorker();
+
+// ---------------------------------------app.js file---------------------------------------
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+let paragraph = "Welcome to React App Development";
+let name = "Richard";
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+      <h1> { paragraph } { name }</h1>
+      </div>
+    );
+  }
+}
+
+export default App;
+
